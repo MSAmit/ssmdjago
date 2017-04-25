@@ -1,0 +1,7 @@
+{% extends "about/header.html"%}
+
+{% block content %}
+	{% for job in object_list %}
+		<h5>{{job.date|date:"d-m-Y"}}<a href = "/jobs/{{job.id}}"> {{job.name}}</a></h5>
+	{% endfor %}
+{% endblock %}	

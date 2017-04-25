@@ -1,0 +1,12 @@
+{% extends "about/header.html"%}
+
+{% block content %}
+	<h3>Name: {{jobs.name}}</h3>
+	<p>{{jobs.address|safe|linebreaks}}</p>
+	<h4>Date: {{jobs.date}}</h4>
+	<h4>Model no: {{jobs.modelNo}}</h4>
+	<h4>Attendee: {{jobs.attendee}}</h4>
+	<h4>Service Category: {{jobs.serviceCategory}}</h4>
+	<h4>Spares Used: {{jobs.spares}}</h4>
+	<h4>Lubes Used: {{jobs.lubes}}</h4>
+{% endblock %}	
